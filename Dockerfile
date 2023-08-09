@@ -11,10 +11,9 @@ COPY package*.json ./
 RUN npm install
 
 # Copy application code to the working directory
-COPY app.js .
+COPY . .
 
 # Expose the port that the application listens on
 EXPOSE 3000
 
-
-CMD ["node", "app.js"]
+CMD ["npm", "start"]
