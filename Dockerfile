@@ -11,10 +11,10 @@ COPY package*.json ./
 RUN npm install
 
 # Copy application code to the working directory
-COPY SAMPLE-NODEJS-ASSIGN1-MAIN.js .
+COPY app.js .
 
 # Expose the port that the application listens on
 EXPOSE 3000
 
 
-CMD ["node", "SAMPLE-NODEJS-ASSIGN1-MAIN.js"]
+CMD ["node", "app.js"]
